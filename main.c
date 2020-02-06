@@ -34,6 +34,16 @@ int main()
     printf("Preciso qualquer tecla para continuar!\n");
     system ("pause");
 
+    int i;
+    int n=20;
+
+    printf("Segue listagem dos %d primeiros numeros inteiros:\n",n);
+
+    for (i=0 ; i<n ; i++)
+    {
+        printf("%d\n",i);
+    }
+
 
 
     return 0;
