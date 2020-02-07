@@ -16,7 +16,7 @@ int numero=10;
 char letra_d='d';
 short int numero_pequeno=35;
 long int numero_grande=4545956;
-long long int numero_muito_grande= 94545566959956;
+long long int numero_muito_grande= 894545566959956;
 
 
 int somar(int a, int b)
@@ -105,17 +105,25 @@ int main()
 
     if (idade<50 && idade>=18)
     {
-        printf("Tu é adulto e está em idade boa");
+        printf("Tu é adulto e está em idade boa!\n");
     }
     else if (idade<18)
     {
-        printf("Tu ainda e moleque");
+        printf("Tu ainda e moleque\n");
     }
 
     else
     {
-        printf("Tu já está meio velho!");
+        printf("Tu já está meio velho!\n");
     }
+
+    //sizeof -> resulta no número de bytes de um determinado tipo
+
+    printf("tamando do int: %d\n", sizeof(int));
+    printf("tamanho do float %lf\n",sizeof(float));
+    printf("tamanho do short int %hd\n",sizeof(short));
+    printf("tamanho do log int %ld\n",sizeof(long));
+    printf("tamanho do double: %le\n",sizeof(double));
 
     return 0;
 }
